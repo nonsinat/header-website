@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/9339050507.js" crossorigin="anonymous"></script>
+<style>
+* {box-sizing: border-box;}
+
+body {
+margin: 0;
+font-family: 'Pacifico', cursive;;
+}
+
+.topnav {
+overflow: hidden;
+background-color: #e9e9e9;
+}
+
+.topnav a {
+float: left;
+display: block;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.topnav a.active {
+background-color: deeppink;
+color: white;
+}
+
+.topnav .search-container {
+float: right;
+}
+
+.topnav input[type=text] {
+padding: 6px;
+margin-top: 8px;
+font-size: 17px;
+border: none;
+}
+
+.topnav .search-container button {
+float: right;
+padding: 6px 10px;
+margin-top: 8px;
+margin-right: 16px;
+background: #ddd;
+font-size: 17px;
+border: none;
+cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+.topnav .search-container {
+float: none;
+}
+.topnav a, .topnav input[type=text], .topnav .search-container button {
+float: none;
+display: block;
+text-align: left;
+width: 100%;
+margin: 0;
+padding: 14px;
+}
+.topnav input[type=text] {
+border: 1px solid #ccc;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+<a class="active" href="#home"><small class="fa fa-home">Home</small></a>
+<a href="Register.html"><small class="fa fa-user">Register</small></a>
+<a href="Timetable.html"><small class="fa fa-calendar">Timetable</small> </a>
+<div class="search-container">
+<form action="/action_page.php">
+<input type="text" placeholder="Search.." name="search">
+<button type="submit"><i class="fa fa-search"></i></button>
+</form>
+</div>
+</div>
+
+<div style="padding-left: 16px" class="s1">
+    <fieldset>
+        <legend align="center">
+            <h2>List Tag</h2>
+        </legend>
+        <p>
+            <ul>
+                <li style="list-style-type:disc;">Unordered list example</li>
+                <li style="list-style-type:none;"><br>Soft drink<br>
+                    <ol>
+                        <li>Coke</li>
+                        <li>Sprite</li>
+                        <li>Pure</li>
+                    </ol>
+                </li>
+                <li style="list-style-type:none;"><br>Alcohol Drink<br>
+                    <ol>
+                        <li>Wine</li>
+                        <li>Beer</li>
+                    </ol>
+                </li>
+                <br>
+                <li style="list-style-type:square;">Orderlist example<br>
+                    <ol>
+                        <li type="A" value="9">One</li>
+                        <li type="A" value="3">Two</li>
+                        <li type="1" value="4">Three</li>
+                    </ol>
+                </li>
+                <li style="list-style-type:none;"><br>Unorder list example<br>
+                    <ol style="list-style-type:cicle;">
+                        <li style="list-style: circle;">Monday</li>
+                        <li style="list-style: circle;">Tuesday</li>
+                        <li style="list-style: circle;">Wednesday</li>
+                    </ol>
+                </li>
+            </ul>
+        </p>
+    </fieldset>
+</div>>
+
+</body>
+</html>
